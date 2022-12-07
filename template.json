@@ -1,0 +1,36 @@
+{
+    "gpsRecords": [
+        {
+            "altitude": 0,
+            "distance": 1,
+            "heading": 90,
+            "latitude": 50.12115,
+            "longitude": 8.63963,
+            "speed": 1.0,
+            "utcTime": 0
+        },
+        {
+            "altitude": 0,
+            "distance": 1,
+            "heading": 90,
+            "latitude": 50.12115,
+            "longitude": 8.63963,
+            "speed": 1.0,
+            "utcTime": 1000
+        },
+        {
+            "altitude": 0,
+            "distance": 1,
+            "heading": 90,
+            "latitude": 50.12115,
+            "longitude": 8.63960,
+            "speed": 1.0,
+            "utcTime": 2000
+        }
+    ],
+    "key": "ac687a68ea",
+    "lsastate": 0,
+    "utcTime": 4000,
+    "uuid": "4c7e55ec-8572-4301-8f37-6475669680d3",
+    "value": 1
+}

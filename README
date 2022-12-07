@@ -1,0 +1,20 @@
+Example usage:
+
+./generate_request.py 50.11251 8.6875  270 | curl --silent --json @- https://prognose.gevas.eu/frankfurt/ssp-apha/rest/position/v14 | jq
+
+Three (fake) position data sets are required by the server.
+Each data set/record contains also speed, distance to previous record and heading, which is redundant to some extend and calculated
+by the py script from the provided position of the traffic light and the provided direction the traffic light is facing to.
+270 degrees, for example, correspond to traffic approaching the traffic light from the west - or, equivalently, eastbound vehicles heading
+toward the traffic light.
+
+Altitude fields can be ignored (=0).
+"key" seems to be equal across all clients and may be different for some development devices.
+However, "uuid" is client specific but can be set arbitrarily without prior registration or assignment.
+The official client replaces its uuid every 30mins for privacy reasons.
+For our development/testing/hacking purposes, we should maybe use only one key to keep the option to distinguish (our) fake position data from
+real data from users using the official app later on by the operator, since our goal is not to corrupt the collected traffic data which may be used
+by official authorities to perform various data analysis and traffic planning and so on.
+The purpose of "lsastate" and "value" are unknown at the moment.
+
+
